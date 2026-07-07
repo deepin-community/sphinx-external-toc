@@ -1,5 +1,18 @@
-template-repository (1.0-1) unstable; urgency=medium
+sphinx-external-toc (1.0.1-1) unstable; urgency=medium
 
-  * Initial release
+  * Remove comment in control file
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Christian Bayle <bayle@debian.org>  Sun, 06 Apr 2025 22:44:04 +0200
+
+sphinx-external-toc (1.0.1-1~exp2) experimental; urgency=medium
+
+  * Set default branch debian/master
+  * Set Maintainer Debian Python Team
+
+ -- Christian Bayle <bayle@debian.org>  Mon, 17 Mar 2025 00:57:52 +0100
+
+sphinx-external-toc (1.0.1-1~exp1) experimental; urgency=low
+
+  * Initial release. (Closes: #1099939)
+
+ -- Christian Bayle <bayle@debian.org>  Thu, 06 Mar 2025 02:42:31 +0000

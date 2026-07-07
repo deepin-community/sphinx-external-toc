@@ -1,0 +1,10 @@
+Document: sphinx-external-toc
+Title: Debian sphinx-external-toc Manual
+Author: https://github.com/orgs/executablebooks/people
+Abstract: This manual describes how to use the sphinx extension 
+ sphinx-external-toc
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/python-sphinx-external-toc-doc/html/index.html
+Files: /usr/share/doc/python-sphinx-external-toc-doc/html/*.html

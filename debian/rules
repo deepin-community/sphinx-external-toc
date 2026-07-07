@@ -1,4 +1,17 @@
-#!/usr/bin/make -f
+#! /usr/bin/make -f
 
+export PYBUILD_NAME=sphinx-external-toc
 %:
-	dh $@
+	dh $@ --with python3,sphinxdoc  --buildsystem=pybuild
+
+
+execute_after_dh_auto_build-indep: export http_proxy=127.0.0.1:9
+execute_after_dh_auto_build-indep: export https_proxy=127.0.0.1:9
+execute_after_dh_auto_build-indep:
+	PYTHONPATH=. python3 -m sphinx -N -bhtml \
+	docs/ build/html # HTML generator
+	PYTHONPATH=. python3 -m sphinx -N -bman \
+	docs/ build/man # Manpage generator
+	# Rename the man to correspond to /usr/bin/sphinx-etoc
+	mv build/man/sphinxexternaltoc.1 build/man/sphinx-etoc.1
+
